@@ -1,3 +1,36 @@
+/* Telefonlar için (768px ve altı) */
+@media screen and (max-width: 768px) {
+    /* Yan yana duran container'ları alt alta diz */
+    .split-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Sol taraftaki mockup'ı mobilde gizle (sadece giriş formu kalsın) */
+    .left-section {
+        display: none;
+    }
+
+    /* Giriş kutusunu ekranın ortasına al */
+    .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-box {
+        width: 100% !important;
+        border: none;
+    }
+
+    /* Sayfa kaymasını engelle */
+    body, .page-wrapper {
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
+
+
+
 * {
     margin: 0;
     padding: 0;

